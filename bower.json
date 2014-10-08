@@ -1,5 +1,5 @@
 {
-  "name": "malhar-angular-dashboard",
+  "name": "angularjs-dashboard",
   "version": "2.0.2",
   "ignore": [
     "docs",
@@ -22,8 +22,8 @@
     "angular-markdown-directive": "~0.3.1"
   },
   "main": [
-    "dist/malhar-angular-dashboard.css",
-    "dist/malhar-angular-dashboard.js"
+    "dist/angularjs-dashboard.css",
+    "dist/angularjs-dashboard.js"
   ],
   "overrides": {
     "showdown": {

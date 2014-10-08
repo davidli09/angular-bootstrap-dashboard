@@ -29,7 +29,7 @@ gulp.task('build:js', ['partials'], function() {
     paths.tmp + '/partials/templateCacheHtml.js'
   ])
     .pipe($.angularFilesort())
-    .pipe($.concat('malhar-angular-dashboard.js'))
+    .pipe($.concat('angularjs-dashboard.js'))
     .pipe($.ngAnnotate())
     .pipe(gulp.dest(paths.dist))
 
@@ -39,7 +39,7 @@ gulp.task('build:css', function() {
   return gulp.src([
     paths.src + '/components/**/*.less'
   ])
-    .pipe($.concat('malhar-angular-dashboard.less'))
+    .pipe($.concat('angularjs-dashboard.less'))
     .pipe($.less())
     .pipe(gulp.dest(paths.dist));
 });

@@ -1,18 +1,3 @@
-/*
- * Copyright (c) 2014 DataTorrent, Inc. ALL Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *   http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 'use strict';
 
 angular.module('ui.dashboard', ['ui.bootstrap', 'ui.sortable']);
@@ -219,14 +204,14 @@ angular.module('ui.dashboard')
          */
         scope.saveDashboard = function (force) {
           if (!scope.options.explicitSave) {
-            scope.dashboardState.save(scope.widgets);
+            return scope.dashboardState.save(scope.widgets);
           } else {
             if (!angular.isNumber(scope.options.unsavedChangeCount)) {
               scope.options.unsavedChangeCount = 0;
             }
             if (force) {
               scope.options.unsavedChangeCount = 0;
-              scope.dashboardState.save(scope.widgets);
+              return scope.dashboardState.save(scope.widgets);
 
             } else {
               ++scope.options.unsavedChangeCount;
@@ -239,9 +224,9 @@ angular.module('ui.dashboard')
          */
         scope.externalSaveDashboard = function(force) {
           if (angular.isDefined(force)) {
-            scope.saveDashboard(force);
+            return scope.saveDashboard(force);
           } else {
-            scope.saveDashboard(true);
+            return scope.saveDashboard(true);
           }
         };
 
@@ -300,7 +285,8 @@ angular.module('ui.dashboard')
         scope.options.removeWidget = scope.removeWidget;
         scope.options.openWidgetSettings = scope.openWidgetSettings;
         scope.options.clear = scope.clear;
-        scope.options.resetWidgetsToDefault = scope.resetWidgetsToDefault
+        scope.options.resetWidgetsToDefault = scope.resetWidgetsToDefault;
+        scope.options.currentWidgets = scope.widgets;
 
         // save state
         scope.$on('widgetChanged', function (event) {

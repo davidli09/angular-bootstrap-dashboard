@@ -1,8 +1,5 @@
 angular-dashboard
 ====================
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/DataTorrent/malhar-angular-dashboard?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-[![Build Status](https://travis-ci.org/DataTorrent/malhar-angular-dashboard.svg?branch=master)](https://travis-ci.org/DataTorrent/malhar-angular-dashboard)
 
 Generic AngularJS component/directive providing dashboard/widgets functionality.
 
@@ -35,24 +32,6 @@ Contributing
 
 This project welcomes new contributors.
 
-You acknowledge that your submissions to DataTorrent on this repository are made pursuant the terms of the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) and constitute "Contributions," as defined therein, and you represent and warrant that you have the right and authority to do so.
-
-When **adding new javascript files**, please prepend the Apache v2.0 license header, which can be found in [CONTRIBUTING.md file](https://github.com/DataTorrent/malhar-angular-dashboard/blob/master/CONTRIBUTING.md).
-
-
-Examples
---------
-
-[Simple demo](http://datatorrent.github.io/malhar-angular-dashboard/#/) (minimum dependencies) [[source code](src/app)]
-
-[Advanced demo](http://datatorrent.github.io/malhar-dashboard-webapp/#/) (charts, visualization, data sources, etc.) [[source code](https://github.com/DataTorrent/malhar-dashboard-webapp)]
-
-UI Console (very complex application; REST, WebSocket and Socket.IO data sources; dashboard customization; etc.) [[source code](https://github.com/DataTorrent/malhar-ui-console)]
-
-Widget Library using the dashboard [[source code](https://github.com/DataTorrent/malhar-angular-widgets)]
-
-![AngularJS Dashboard](docs/AngularJSDashboard.png "AngularJS Dashboard")
-
 Build
 -----
 
@@ -78,8 +57,6 @@ Example of including dependencies from CDN [here](src/index.html)
 Getting Started
 ---------------
 
-See [demo](http://datatorrent.github.io/malhar-angular-dashboard/#/) (several widgets) for a quick start.
-
 Running demo.
 
  ``` bash
@@ -95,7 +72,7 @@ Application will be available at http://localhost:3000/
 With bower:
 
 ```
-bower install malhar-angular-dashboard
+bower install angularjs-dashboard
 ```
 For legacy reasons, this bower module is also registered as `angular-ui-dashboard`.
 
@@ -105,11 +82,11 @@ Download the zip of this repo and use the files in the `dist` folder.
 
 ### include
 
-Load `dist/malhar-angular-dashboard.js` and `dist/malhar-angular-dashboard.css` in your html:
+Load `dist/angularjs-dashboard.js` and `dist/angularjs-dashboard.css` in your html:
 
 ```HTML
-<link rel="stylesheet" href="bower_components/malhar-angular-dashboard/dist/malhar-angular-dashboard.css">
-<script src="bower_components/malhar-angular-dashboard/dist/malhar-angular-dashboard.js"></script>
+<link rel="stylesheet" href="bower_components/angularjs-dashboard/dist/angularjs-dashboard.css">
+<script src="bower_components/angularjs-dashboard/dist/angularjs-dashboard.js"></script>
 ```
 
 Also be sure to add it to your apps dependency list:
@@ -379,10 +356,6 @@ Overriding widget settings for a specific widget is almost exactly like overridi
       defaultWidgets: myDefaultWidgets
     };
 
-Dashboard Layouts
------------------
-One common requirement for user-customizable dashboards is the ability to have multiple layouts consisting of the same set of widget definitions. This sounds more confusing than it is, so the best way to understand it is to take a look at the [layouts demo](http://datatorrent.github.io/malhar-angular-dashboard/#/layouts). You can also see this demo by running `gulp serve` and navigating to `/#/layouts` (or `/#/layouts/explicit-saving`, behavior when `options.explicitSave` is `true`). This is achieved by using the `dashboard-layouts` directive:
-
 ```HTML
 <div dashboard-layouts="layoutOptions"></div>
 ```
@@ -408,10 +381,6 @@ As with `dashboardOptions`, `layoutOptions` gets endowed with the methods `addWi
 
 Links
 -----
-
-[malhar-angular-widgets](https://github.com/DataTorrent/malhar-angular-widgets) Widget library (widgets, data models, WebSocket, etc.)
-
-[malhar-dashboard-webapp](https://github.com/DataTorrent/malhar-dashboard-webapp) Demo using this dashboard and widget library
 
 [Node.js](http://nodejs.org/) Software platform built on JavaScript runtime
 

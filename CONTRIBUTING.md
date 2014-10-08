@@ -2,10 +2,6 @@ Contributing Guidelines
 =======================
 This project welcomes new contributors.
 
-Licensing
----------
-You acknowledge that your submissions to DataTorrent on this repository are made pursuant the terms of the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html) and constitute "Contributions," as defined therein, and you represent and warrant that you have the right and authority to do so.
-
 When adding **new javascript files**, please include the following Apache v2.0 license header at the top of the file, with the fields enclosed by brackets "[]" replaced with your own identifying information. **(Don't include the brackets!)**:
 
 ```JavaScript
@@ -32,7 +28,7 @@ To start development:
 
 1. Fork this repository and clone the fork onto your development machine:
     ```
-    $ git clone git://github.com/[USERNAME]/malhar-angular-dashboard.git
+    $ git clone git://github.com/[USERNAME]/angularjs-dashboard.git
     ```
 
 2. Install dependencies

@@ -1,8 +1,8 @@
 {
-  "name": "malhar-angular-dashboard",
+  "name": "angularjs-dashboard",
   "version": "2.0.2",
-  "author": "https://github.com/DataTorrent/malhar-angular-dashboard/graphs/contributors",
-  "homepage": "https://github.com/DataTorrent/malhar-angular-dashboard",
+  "author": "scriptmaven",
+  "homepage": "https://github.com/scriptmaven/angularjs-dashboard",
   "license": "Apache License, v2.0",
   "dependencies": {},
   "devDependencies": {
@@ -34,6 +34,7 @@
     "gulp-uglify": "~1.0.1",
     "gulp-useref": "~1.0.2",
     "http-proxy": "~1.7.0",
+    "jasmine-core": "^3.3.0",
     "jshint-stylish": "~1.0.0",
     "karma": "~0.13.22",
     "karma-coverage": "",
@@ -42,6 +43,7 @@
     "karma-phantomjs-launcher": "~0.2.0",
     "main-bower-files": "~2.4.0",
     "merge-stream": "^0.1.7",
+    "phantomjs": "^2.1.7",
     "protractor": "~1.4.0",
     "require-dir": "~0.1.0",
     "uglify-save-license": "~0.4.1",
@@ -51,8 +53,8 @@
     "node": ">=0.10.0"
   },
   "main": [
-    "dist/malhar-angular-dashboard.css",
-    "dist/malhar-angular-dashboard.js"
+    "dist/angularjs-dashboard.css",
+    "dist/angularjs-dashboard.js"
   ],
   "scripts": {
     "test": "gulp test"
